@@ -1,0 +1,282 @@
+:root {
+  --Cyan: hsl(180, 66%, 49%);
+  --Dark-Violet: hsl(257, 27%, 26%);
+  --Red: hsl(0, 87%, 67%);
+  --white: white;
+  --Gray: hsl(0, 0%, 75%);
+  --Grayish-Violet: hsl(257, 7%, 63%);
+  --Very-Dark-Blue: hsl(255, 11%, 22%);
+  --Very-Dark-Violet: hsl(260, 8%, 14%);
+  --Font-size: 18px;
+  --lightWeight: 500;
+  --heavyWeight: 700;
+}
+
+/*************Tablet Devices******************/
+@media screen and (max-width: 1300px) {
+  html {
+    margin: 0;
+  }
+  body {
+    margin: 0;
+  }
+  .brand-logo {
+    margin: 0;
+  }
+  .intro-text {
+    width: 50%;
+  }
+  .intro-text h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  .login {
+    padding-right: 4rem;
+  }
+}
+
+/*************Mobile Devices******************/
+@media screen and (max-width: 850px) {
+  html {
+    margin: 0;
+  }
+  body {
+    margin: 0;
+    padding: .2rem;
+  }
+  .brand-logo {
+    margin: 0;
+    padding: 0 4rem;
+  }
+  .intro-section {
+    padding-left: 2rem;
+  }
+  nav {
+    padding-left: 2rem;
+  }
+  nav .nav-items {
+    height: 80vh;
+    width: 90%;
+    padding: 0;
+    border-radius: 1rem;
+    margin-top: 9rem;
+    position: fixed;
+    right: 5%;
+    left: 5%;
+    z-index: 10;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    line-height: 5rem;
+    background-color: var(--Dark-Violet);
+    -webkit-transition: top 1s ease;
+    transition: top 1s ease;
+    display: none;
+  }
+  nav .nav-items .u-login {
+    display: block;
+  }
+  nav .nav-items hr {
+    display: block;
+  }
+  nav .nav-items .btn {
+    padding: 0 38%;
+    font-weight: var(--heavyWeight);
+  }
+  nav .nav-items .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .nav-items li a,
+  nav .login a:first-child {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: var(--heavyWeight);
+  }
+  nav .openMenu {
+    display: block;
+  }
+  .u-login {
+    display: inline-block;
+    padding: .8rem;
+  }
+  .login {
+    display: none;
+  }
+  /***********INTRO***********/
+  .intro-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .intro-img {
+    width: 90%;
+  }
+  .intro-text {
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  .intro-text h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+    margin-top: 4rem;
+  }
+  .intro-text p {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .btn-large {
+    font-size: 2.5rem;
+    font-weight: var(--heavyWeight);
+    padding: 2rem 4.5rem;
+  }
+  .search-feature {
+    margin: 0 auto;
+  }
+  .search-feature form input {
+    width: 60%;
+  }
+  .search-feature form .btn-shorten {
+    width: 25%;
+    padding: 2rem 1rem;
+  }
+  /******************FEATURES SECTION**********************/
+  /******************FEATURES SECTION**********************/
+  /******************FEATURES SECTION**********************/
+  /******************FEATURES SECTION**********************/
+  .features {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .features::after {
+    top: 20%;
+    left: 50%;
+    width: .5rem;
+    height: 70rem;
+  }
+  .featured-item {
+    margin-bottom: 6rem;
+    margin-right: 0;
+  }
+  .featured-item h3 {
+    font-size: 3rem;
+  }
+  .feature-img {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .featured-item:not(:last-child) {
+    margin-right: 0;
+  }
+  .box2,
+  .box-3 {
+    margin-top: 0;
+  }
+  /*************CTA SECTION*****************/
+  /*************CTA SECTION*****************/
+  /*************CTA SECTION*****************/
+  /*************CTA SECTION*****************/
+  .cta-container::before {
+    background-image: url(/images/bg-boost-mobile.svg);
+  }
+  /****Footer Section*****/
+  /****Footer Section*****/
+  /****Footer Section*****/
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .footer-bx {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .search-feature {
+    margin: 2rem;
+    height: 8rem;
+    background-image: url(/images/bg-shorten-mobile.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .search-feature form {
+    display: block;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: absolute;
+  }
+  .search-feature form .btn-shorten {
+    top: 1.5rem;
+    right: 3.5%;
+    padding: 1.6rem 34%;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    position: relative;
+  }
+  .search-feature form input {
+    bottom: 2rem;
+    right: 3.5%;
+    padding: 1.6rem 5rem;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    font-weight: var(--lightWeight);
+    position: relative;
+  }
+  .intro-text h1 {
+    font-size: 3.9rem;
+    line-height: 4rem;
+  }
+  .featured-text {
+    width: 100%;
+  }
+  .featured-text h2 {
+    font-size: 3.6rem;
+  }
+  nav {
+    margin: 0;
+  }
+  .intro-section {
+    margin: 0;
+  }
+  .featured-item:not(:last-child) {
+    margin-right: 0;
+  }
+}
+/*# sourceMappingURL=media.css.map */

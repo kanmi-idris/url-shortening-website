@@ -1,0 +1,75 @@
+:root {
+    //### Primary
+    --Cyan: hsl(180, 66%, 49%);
+    --Dark-Violet: hsl(257, 27%, 26%);
+    //### Secondary
+    --Red: hsl(0, 87%, 67%);
+    //### Neutral
+    --Gray: hsl(0, 0%, 75%);
+    --Grayish-Violet: hsl(257, 7%, 63%);
+    --Very-Dark-Blue: hsl(255, 11%, 22%);
+    --Very-Dark-Violet: hsl(260, 8%, 14%);
+    //### Body
+    --Font-size: 18px;
+    //### Fonts
+    --lightWeight: 500;
+    --heavyWeight: 700;
+}
+
+*,
+*::before
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    // overflow-x: hidden;
+}
+
+body {
+    // overflow-x: hidden;
+    // width: 100%;
+    // padding: 0 2rem;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;    
+}
+
+hr{
+    size: 4; 
+    width: 90%; 
+    color: white;
+    border-radius: 30%;
+}
+
+.intro-container{
+    width: 100%;
+    max-width: 120rem;
+    margin: 0;
+    margin-right: 0;
+    padding: 8rem 0;
+}
+
+p {
+    font-size: 1.6rem;
+    color: var(--Grayish-Violet);
+    line-height: 1.6;
+}
+
+
+
+
+/********UTILITY CLASSES************/
+.u-mb-small {
+    margin-bottom: 1.6rem;
+}
+
+.u-mb-medium {
+    margin-bottom: 3rem;
+}
+
+.u-mb-large {
+    margin-bottom: 5rem;
+}
